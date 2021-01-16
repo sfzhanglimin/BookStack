@@ -10,6 +10,7 @@ RUN apt update -y \
     && apt update -y \
     && apt install -y fonts-wqy-zenhei fonts-wqy-microhei \
     && apt install -y xdg-utils wget xz-utils python chromium-browser \
+    && apt-get install golang \
     && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sh /dev/stdin
 
 ENV LANG en_US.utf8
