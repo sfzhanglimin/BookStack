@@ -19,7 +19,7 @@ ENV LANG en_US.utf8
 COPY . /www/BookStack/
 
 # 将程序拷贝进去
-COPY lib/time/zoneinfo.zip /usr/local/go/lib/time/
+COPY $GOROOT/lib/time/zoneinfo.zip /usr/local/go/lib/time/
 
 RUN chmod 0777 -R /www/BookStack/
 
